@@ -1,0 +1,31 @@
+{
+  "name": "Victor Casino Master",
+  "version": "1.0",
+  "description": "Play Rainbow 49 Balls with predictions right in your browser",
+  "permissions": ["tabs", "activeTab", "storage", "https://victorcasino.com.ng/*"],
+  "background": {
+    "scripts": ["./js/script.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'",
+  "content_scripts": [
+  {
+    "matches": [
+      "https://logigames.bet9ja.com/Games/*"
+    ],
+    "js": ["./js/content.js", "./js/jquery-3.2.1.min.js"]
+  }
+],
+  "web_accessible_resources":["manipulator.js"],
+  "browser_action": {
+      "default_icon": {                    
+          "192": "icons/logo.png"
+        },
+        "default_title": "Victor Casino (Master)",
+        "default_popup": "index.html"
+      },
+  "icons": {
+      "192": "icons/logo.png"
+  },
+  "manifest_version": 2
+}

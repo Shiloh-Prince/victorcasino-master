@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="./css/semantic.min.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+<meta name="viewport" content="user-scalable=0,initial-scale=1.0,width=device-width"/>
+<body>
+  	<form class="ui form" style="background-color:white;padding:20px;border-radius:5px;box-shadow:0px 2px 3px lightgray">
+  	  <br/>
+  	  <center><img src="./img/logo.png" class="splash-logo"/></center>
+	  <h4 class="ui dividing header">Activate your Game</h4>
+	  <span id="error-display" style="margin:10px;color:tomato;display:none;font-weight:bold;font-size:13px"></span>
+	  <div class="field">
+	      <label>Activation key</label>
+	      <div style="color:gray;font-size:12px;margin:5px"><i class="fas fa-info-circle"></i> Provide a 25-digit activation key purchased from Victor Casino</div>
+	      <input id="key" maxlength="25">
+	  </div>
+	  <center>
+	  	<div class="ui green button" id="activate" tabindex="0"><i class="fas fa-key"></i> Activate</div>
+	  	<br/>
+	  	<br/>
+	  	<span style="color:gray;font-size:13px">
+	  		Want to purchase a key? Visit <a style="color:cornflowerblue" href="https://victorcasino.com.ng/#activation" target="_blank">https://victorcasino.com.ng/#activation</a>
+	  	</span>
+	  </center>
+	  <br/>
+	</form>
+</body>
+<!-- <script type="text/javascript" src="./assets/js/all.min.js"></script> -->
+<script type="text/javascript" src="./js/activation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/sec.js"></script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="./css/semantic.min.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+<meta name="viewport" content="user-scalable=0,initial-scale=1.0,width=device-width"/>
+<body>
+	<p align="right">
+		<div id="banner"></div>
+	</p>
+  	<form class="ui form" style="background-color:white;padding:20px;border-radius:5px;box-shadow:0px 2px 3px lightgray">
+  	  <p align="right"><a style="color:#2a2b2d;cursor:pointer" id="close-game"><i class="fas fa-times"></i></a></p>
+  	  <br/>
+	  <h4 class="ui dividing header">NEW GAME</h4>
+	  <div class="field">
+	      <label>Game mode</label>
+	      <select class="ui fluid dropdown" id="gamemode">
+	        <option value="Auto">Auto</option>
+	        <option value="Manual">Manual</option>
+	      </select>
+	  </div>
+	  <div class="field">
+	      <label>Type of draw</label>
+	      <select class="ui fluid dropdown" id="drawtype">
+	      	<option value="0">0</option>
+	      	<option value="2+ (Rapid)">2+ (Rapid)</option>
+	      	<option value="2+ (Slow)">2+ (Slow)</option>
+	        <option value="3+" selected="selected">3+</option>
+	        <option value="4+">4+</option>
+	        <option value="5+">5+</option>
+	        <option value="6">6</option>
+	      </select>
+	  </div>
+	  <center><div class="ui blue button" id="start-game" tabindex="0"><i class="fas fa-gamepad"></i> Start game</div></center>
+	  <br/>
+	</form>
+	<br/>
+	<br/>
+	<center>
+		<b>Connect with me</b>
+	</center>
+	<div class="row mt-1">
+		<div class="col">
+			<p align="right">
+				<a href="https://www.youtube.com/channel/UCTmDfiPBrTU8gCeye9UFVhw" target="_blank"><img src="./img/youtube.png" class="social-icon"/></a>
+			</p>
+		</div>
+		<div class="col">
+			<p>
+				<a href="https://t.me/victor_casino" target="_blank"><img src="./img/telegram.png" class="social-icon"/></a>
+			</p>
+		</div>
+		<div class="col">
+			<p align="left">
+				<a href="https://wa.me/2349064630394" target="_blank"><img src="./img/whatsapp.png" class="social-icon"/></a>
+			</p>
+		</div>
+	</div>
+</body>
+<!-- <script type="text/javascript" src="./assets/js/all.min.js"></script> -->
+<script type="text/javascript" src="./js/player.js"></script>
+<script type="text/javascript" src="./js/sec.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/sec.js"></script>
+</html>

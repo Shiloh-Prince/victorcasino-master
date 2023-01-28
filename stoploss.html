@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="./css/semantic.min.css"/>
+<link rel="stylesheet" type="text/css" href="./assets/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" />
+<meta name="viewport" content="user-scalable=0,initial-scale=1.0,width=device-width"/>
+<body>
+	<form class="ui form" style="background-color:white;padding:20px;border-radius:5px;box-shadow:0px 2px 3px lightgray">
+	  <a href="play.html" style="color:gray"><span><i class="fas fa-home"></i> Home</span></a>
+  	  <br/>
+	  <center><h4 class="ui header" style="margin-bottom:0px">Please wait...</h4></center>
+	  <br/>
+	  <center><span style="color:gray;font-size:12px">Setup your configuration for loss and greed control</span></center>
+	  <br/>
+	  <div class="field">
+	      <label>Profit cap</label>
+	      <input type="number" id="max-profit" value="250">
+	  </div>
+	  <div class="field">
+	      <label>Maximum consecutive losses</label>
+	      <input type="number" id="max-loss" value="4">
+	  </div>
+	  <center>
+		  <div class="fields">
+		    <div class="field">
+		    	<center><div class="ui red button" id="cancel-game" tabindex="0">Cancel</div></center>
+		    </div>
+		    <div class="field">
+		  	  	<center><div class="ui green button" id="proceed-game" tabindex="0">Proceed</div></center>
+		    </div>
+		  </div>
+	  </center>
+	  <br/>
+	</form>
+</body>
+<!-- <script type="text/javascript" src="./assets/js/all.min.js"></script> -->
+<script type="text/javascript" src="./js/stoploss.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
+</html>
